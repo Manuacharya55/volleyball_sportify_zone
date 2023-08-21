@@ -1,0 +1,76 @@
+.card-wrapper {
+    margin: 20px 0px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    row-gap: 5vh;
+}
+
+.live-card {
+    width: 390px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: var(--component-color);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.match-name,
+.team1-status,
+.team2-status {
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* word-wrap: break-word; */
+}
+
+.team1-score,.team2-score{
+    font-size: 1.5em;
+    font-weight:600;
+}
+.result {
+    text-align: center;
+    font-size: 1.5em;
+    /* font-weight: 300; */
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.match-name {
+    height: 50px;
+    font-size: 1em;
+    font-weight: 900;
+    background-color: var(--hover-color);
+    color: var(--text-color);
+    justify-content: center;
+    text-transform: capitalize;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card-body {
+    width: 100%;
+    padding: 10px 0px;
+    color: var(--text-color);
+    background-color: var(--components-color);
+}
+
+.team {
+    display: flex;
+    align-items: center;
+}
+
+.team img {
+    height: 10vh;
+    border-radius: 50%;
+}
+
+@media (max-width:500px) {
+    .live-card {
+        width: 320px;
+        overflow: hidden;
+        border-radius: 15px;
+    }
+}

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportify Zone</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/teams.css">
+    <!-- <link rel="stylesheet" href="../css/colors.css"> -->
+</head>
+
+<body id="top-navigation">
+    <a href="#top-navigation" class="moveup"><i class="fa-solid fa-arrow-turn-up"></i></a>
+    <div class="main-container">
+        <!-- primary navbar -->
+        <primary-navbar></primary-navbar>
+
+        <div class="content-holder">
+            <!-- secondary navbar -->
+            <secondary-navbar></secondary-navbar>
+
+            <div class="container">
+                <div class="teamcard-holder" style="padding: 5vh 0vh;">
+
+                    <!-- ahamedabad team stat -->
+                    <a href="./ahamedabad.html">
+                        <div class="teamcard">
+                            <div class="card" id="team1">
+
+                                <img src="https://www.primevolleyballleague.com/static-assets/images/team/69.png?v=1.15"
+                                    alt="" class="team-logo">
+                                <h2 class="team-name">Ahemedabad Defenders</h2>
+                            </div>
+                            <div class="stats">
+                                <div class="text-stat">
+                                    <span class="result-details">matches : 30</span>
+                                    <span class="result-details">won : 25</span>
+                                    <span class="result-details">lost : 5</span>
+                                </div>
+                                <div class="chart-stats">
+                                    <canvas id="ahamedabad" height></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- bengaluru stat -->
+                    <a href="./bengaluru.html">
+                        <div class="teamcard">
+                            <div class="card" id="team2">
+                                <img src="https://www.primevolleyballleague.com/static-assets/images/team/72.png?v=1.15"
+                                    alt="" class="team-logo">
+                                <h2 class="team-name">Bengaluru Torpedoes</h2>
+                            </div>
+                            <div class="stats">
+                                <div class="text-stat">
+                                    <span class="result-details">matches : 13</span>
+                                    <span class="result-details">won : 7</span>
+                                    <span class="result-details">lost : 6</span>
+                                </div>
+                                <div class="chart-stats">
+                                    <canvas id="bengaluru" height></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- calicut team stats -->
+                    <a href="./calicut.html">
+                        <div class="teamcard">
+                            <div class="card" id="team3">
+                                <img src="https://www.primevolleyballleague.com/static-assets/images/team/70.png?v=1.15"
+                                    alt="" class="team-logo">
+                                <h2 class="team-name">calicut heroes</h2>
+                            </div>
+                            <div class="stats">
+                                <div class="text-stat">
+                                    <span class="result-details">matches : 13</span>
+                                    <span class="result-details">won : 7</span>
+                                    <span class="result-details">lost : 6</span>
+                                </div>
+                                <div class="chart-stats">
+                                    <canvas id="calicut" height></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- chennial team stats -->
+                    <a href="./chennai.html">
+                        <div class="teamcard">
+                            <div class="card" id="team4">
+                                <img src="https://www.primevolleyballleague.com/static-assets/images/team/68.png?v=1.155"
+                                    alt="" class="team-logo">
+                                <h2 class="team-name">Chennai blitz</h2>
+                            </div>
+                            <div class="stats">
+                                <div class="text-stat">
+                                    <span class="result-details">matches : 13</span>
+                                    <span class="result-details">won : 3</span>
+                                    <span class="result-details">lost : 10</span>
+                                </div>
+                                <div class="chart-stats">
+                                    <canvas id="chennai" height></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- hyderabad team stats -->
+                    <a href="./hyderabad.html">
+                        <div class="teamcard">
+                            <div class="card" id="team5">
+                                <img src="https://www.primevolleyballleague.com/static-assets/images/team/64.png?v=1.15"
+                                    alt="" class="team-logo">
+                                <h2 class="team-name">hyderbad black hawks</h2>
+                            </div>
+                            <div class="stats">
+                                <div class="text-stat">
+                                    <span class="result-details">matches : 13</span>
+                                    <span class="result-details">won : 7</span>
+                                    <span class="result-details">lost : 6</span>
+                                </div>
+                                <div class="chart-stats">
+                                    <canvas id="hyderabad" height></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+
+                    <!-- kochi team stats -->
+                    <a href="./kochi.html">
+                        <div class="teamcard">
+                            <div class="card" id="team6">
+                                <img src="https://www.primevolleyballleague.com/static-assets/images/team/67.png?v=1.15"
+                                    alt="" class="team-logo">
+                                <h2 class="team-name">kochi blue spikers</h2>
+                            </div>
+                            <div class="stats">
+                                <div class="text-stat">
+                                    <span class="result-details">matches : 7</span>
+                                    <span class="result-details">won : 2</span>
+                                    <span class="result-details">lost : 5</span>
+                                </div>
+                                <div class="chart-stats">
+                                    <canvas id="kochi" height></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+
+                    <!-- kolkatta team stats -->
+                    <a href="./kolkatta.html">
+                        <div class="teamcard">
+                            <div class="card" id="team7">
+                                <img src="https://www.primevolleyballleague.com/static-assets/images/team/71.png?v=1.15"
+                                    alt="" class="team-logo">
+                                <h2 class="team-name">Kolkatta Thunderbolts</h2>
+                            </div>
+                            <div class="stats">
+                                <div class="text-stat">
+                                    <span class="result-details">matches : 13</span>
+                                    <span class="result-details">won : 10</span>
+                                    <span class="result-details">lost : 3</span>
+                                </div>
+                                <div class="chart-stats">
+                                    <canvas id="kolkatta" height></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+
+                    <!-- mumbai team stats -->
+                    <a href="./mumbai.html">
+                        <div class="teamcard">
+                            <div class="card" id="team8">
+                                <img src="https://www.primevolleyballleague.com/static-assets/images/team/mumbai-meteors.png?v=1.15"
+                                    alt="" class="team-logo">
+                                <h2 class="team-name">mumbai meteors</h2>
+                            </div>
+                            <div class="stats">
+                                <div class="text-stat">
+                                    <span class="result-details">matches : 7</span>
+                                    <span class="result-details">won : 2</span>
+                                    <span class="result-details">lost : 5</span>
+                                </div>
+                                <div class="chart-stats">
+                                    <canvas id="mumbai" height></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- footer -->
+            <page-footer></page-footer>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/teams.js"></script>
+    <script src="../js/volleyballElements/primarynavbar.js"></script>
+    <script src="../js/volleyballElements/secondarynavbar.js"></script>
+    <script src="../js/volleyballElements/footer.js"></script>
+    <script src="../js/navbar.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,343 @@
+:root{
+    /* --background-color:#dbd9d9; */
+    --background-color:#10131e;
+    /* --component-color:#fbf6f6; */
+    --component-color:#1a1e2d;
+    --hover-color:#00ABD5;
+    /* --text-color:#222831; */
+    --text-color:#ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.moveup{
+    background-color: var(--hover-color);
+    padding: 10px 14px;
+    border-radius: 50%;
+    position: fixed;
+    top: 85%;
+    left: 90%;
+    text-align: center;
+    z-index: 100;
+    color:var(--text-color);
+}
+.websitelogo{
+    display: flex;
+    align-items: center;
+}
+
+.websitelogo img{
+    height: 80px;
+    width: 80px;
+}
+
+#logo-name{
+    font-size: 1.5em;
+    color:var(--text-color);
+    font-family: 'Roboto Slab', serif;
+}
+
+/* this is website wrapper that holds every thing */
+.main-container {
+    display: flex;
+    background-color: var(--background-color);  
+    /* flex-wrap: wrap;   */
+}
+
+
+/* styling primary navigation bar */
+.primary-navbar-holder {
+    padding: 20px 20px;
+    width: auto;
+    height: 100vh;
+    background: var(--component-color);
+    text-align: left;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    transform: translateX(-100%);
+    transition: 0.8s ease all;
+}
+
+.navigation {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation ul {
+    /* padding: 15px 0px; */
+    list-style: none;
+}
+
+/* hamburger-menu */
+.fa-bars {
+    color: var(--text-color);
+    transition: 0.5s ease;
+}
+
+.fa-bars:hover{
+    opacity: 75%;
+}
+
+.fa-circle-xmark {
+    position: absolute;
+    top: 10px;
+    left: 120px;
+    color: var(--text-color);
+}
+
+.fa-circle-xmark:hover{
+    opacity: 75%;
+}
+.links {
+    margin-top: 25px;
+    padding: 18px;
+    border-radius: 10px;
+}
+
+.links:hover {
+    background-color: var(--hover-color);
+    
+}
+
+.nav-links {
+    text-decoration: none;
+}
+
+.tooltiptext{
+    color:var(--text-color);
+    margin-left: 10px;
+    display: inline-block;
+}
+
+/* styling icons of primary  */
+i {
+    font-size: 1.5em;
+    color: var(--text-color);
+}
+
+.links:hover i {
+    color: var(--component-color);
+}
+
+.links:hover .tooltiptext{
+    color: var(--component-color);
+}
+
+.content-holder {
+    width: 100%;
+}
+
+/* styling second navbar */
+.secondary-navbar-holder {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    /* background:rgba(11, 11, 12, 0.37);
+    box-shadow: 0 15px 25px 0 rgba(11, 11, 12, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px); */
+}
+
+.secondary-navbar {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+/* logo styling */
+.secondary-navbar h3 {
+    color:var(--text-color);
+}
+
+.secondary-navbar ul {
+    list-style: none;
+}
+
+.secondary-links {
+    margin: 0px 15px;
+    text-transform: capitalize;
+    display: inline-block;
+}
+
+.secondary-links .nav-links {
+    font-size: 1.3em;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: 0.5s ease
+}
+
+.secondary-links .nav-links:hover {
+    color: var(--hover-color);
+}
+
+
+/* footer */
+footer {
+    background-color: var(--component-color);
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: var(--text-color);
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i {
+    font-size: 2em;
+    color: var(--hover-color);
+    /* opacity: 0.9; */
+}
+
+.socialIcons a:hover {
+    background-color: var(--hover-color);
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+    color: var(--text-color);
+    transition: 0.5s;
+}
+
+.footerNav {
+    margin: 30px 0;
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav ul li a {
+    color: var(--text-color);
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover {
+    color: var(--hover-color);
+    opacity: 1;
+}
+
+.footerBottom {
+    background-color: var(--background-color);
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: var(--text-color);
+}
+
+.designer {
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+.hamburger-active {
+    transform: translateX(0px);
+}
+
+
+/* responsive navbar */
+@media only screen and (max-width:768px){
+    
+    .fa-bars{
+        position: absolute;
+        top: 25%;
+        bottom: 25%;
+        left: 5%;
+        z-index: 1;
+    }
+    .secondary-navbar-holder{
+        width: 100%;
+        min-height: 130px;
+        position: relative;
+    }
+    .secondary-navbar {
+        padding: 5px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2vh;
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+
+
+    ul {
+        width: 100%;
+        overflow: hidden;
+        overflow-x: auto;
+        white-space: nowrap;
+        align-self: flex-start;
+        text-align: center;
+        /* margin: auto; */
+    }
+
+    .secondary-links {
+        margin: 0px 3px;
+    }
+
+    .hamburger-active {
+        transform: translateX(0%);
+    }
+
+    .moveup{
+        left:80%;
+    }
+}
+
+/* responsiveness */
+@media(max-width:900px) {
+
+
+    .footerNav ul {
+        flex-direction: column;
+    }
+
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--chat bot-->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportify Zone</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/sportifylanding.css">
+    <link rel="stylesheet" href="./css/newscard.css">
+    <link rel="stylesheet" href="./css/cricketlivescore.css">
+    <style>
+        .secondary-navbar-holder {
+            background-color: transparent;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body id="top-navigation">
+    <a href="#top-navigation" class="moveup"><i class="fa-solid fa-arrow-turn-up"></i></a>
+    <div class="main-container">
+        <primary-navbar></primary-navbar>
+        <!-- <a href="./Football/index.html"></a> -->
+
+        <div class="content-holder">
+            <div class="timed-slider-wrapper">
+                <div class="timed-slider-content">
+                    <secondary-navbar></secondary-navbar>
+
+                    <div class="timed-image-slider">
+
+                        <div class="timed-slider">
+                            <div class="sliders">
+                                <img src="./images/background1.jpg" alt="football image" class="slider-image">
+                                <h3 style="margin-left: 30px;">Prime Volleyball League</h3>
+                            </div>
+                            <div class="sliders">
+                                <img src="./images/background2.jpg" alt="" class="slider-image">
+                                <h3 style="margin-left: 30px;">Indian Premier League</h3>
+                            </div>
+                            <div class="sliders">
+                                <img src="./images/background3.jpg" alt="" class="slider-image">
+                                <h3 style="margin-left: 30px;">Indian Super League</h3>
+                            </div>
+                            <div class="sliders">
+                                <img src="./images/background4.jpg" alt="" class="slider-image">
+                                <h3 style="margin-left: 30px;">Pro Kabaddi League</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recent-news-holder">
+                <h2 class="section-name">Todays Trending</h2>
+
+                <div class="sports-news" id="sports-news">
+                    <h2 class="section-name">Todays News</h2>
+
+                    <template id="card-template">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./cards/card-background.jpg" alt="" class="news-image">
+                            </div>
+                            <div class="card-content">
+
+                                <span id="title">Your Title </span>
+                                <p id="description"></p>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </div>
+
+            <div class="popular-leagues">
+                <div class="section-title">
+                    <h1>Popular Leagues of India</h1>
+                </div>
+
+                <div class="section-content">
+                    <div class="league " id="leagues-1"><img src="./images/ipltrophy.png" alt="" class="trophy"></div>
+                    <div class="league" id="leagues-2"><img src="./images/pkltrophy.png" alt="" class="trophy"></div>
+                    <div class="league" id="leagues-3"><img src="./images/isltrophy.png" alt="" class="trophy"></div>
+                    <div class="league" id="leagues-4"><img src="./images/pvltrophy.png" alt="" class="trophy"></div>
+
+                </div>
+            </div>
+            <div class="live-score flex">
+                <h1>Live Scores</h1>
+
+                <div class="card-wrapper">
+
+                </div>
+            </div>
+
+            <page-footer></page-footer>
+        </div>
+    </div>
+
+    <script src="./js/landingpageElements/primarynavbar.js"></script>
+    <script src="./js/landingpageElements/secondarynavbar.js"></script>
+    <script src="./js/landingpageElements/footer.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/indexnews.js"></script>
+    <script src="./js/landingpagecricketlivescore.js"></script>
+
+    <!--ChatBot API-->
+    <df-messenger chat-icon="https:&#x2F;&#x2F;i.postimg.cc&#x2F;cCm6pyh6&#x2F;chatbot-logo.png" intent="WELCOME"
+        chat-title="Sportify Zone" agent-id="50aa47ef-6c8e-45f8-a993-ea68dfaec006" language-code="en"></df-messenger>
+ 
+    <!--Chat Bot Css-->
+    <style>
+        df-messenger {
+            --df-messenger-bot-message: #50cff5;
+            --df-messenger-button-titlebar-color: #00ABD5;
+            --df-messenger-chat-background-color: #e9e9e9;
+            --df-messenger-font-color: black;
+            --df-messenger-send-icon: #00ABD5;
+            --df-messenger-user-message: #c4dde4;
+        }
+    </style>
+
+    <!--Chat Bot JS-->
+    <!-- Jquery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        //To minimise the height of chatbox
+        $(document).ready(function () {
+            window.addEventListener('dfMessengerLoaded', function (event) {
+                $r1 = document.querySelector("df-messenger");
+                $r2 = $r1.shadowRoot.querySelector("df-messenger-chat");
+                $r3 = $r2.shadowRoot.querySelector("df-messenger-user-input"); //for other mods
+                var sheet = new CSSStyleSheet;
+                // manage box height from here
+                sheet.replaceSync(`div.chat-wrapper[opened="true"] { height: 450px }`);
+                $r2.shadowRoot.adoptedStyleSheets = [sheet];
+            });
+        });
+    </script>
+
+</body>
+<!-- <a href="./landingPage/loginsystem/login.php"></a> -->
+
+</html>

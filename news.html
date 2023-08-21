@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportify Zone</title>
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/news.css">
+</head>
+
+<body id="top-navigation">
+    <a href="#top-navigation" class="moveup"><i class="fa-solid fa-arrow-turn-up"></i></a>
+    <div class="main-container">
+        <primary-navbar></primary-navbar>
+
+        <div class="content-holder">
+            <secondary-navbar></secondary-navbar>
+
+            <div class="container">
+                <div class="button-holder">
+                    <button class="direction-button btn-active" onclick="fetchNews('Football')">Football</button>
+                    <button class="direction-button" onclick="fetchNews('Cricket')">Cricket</button>
+                    <button class="direction-button" onclick="fetchNews('Kabaddi')">Kabaddi</button>
+                    <button class="direction-button volleyball" onclick="fetchNews('Volleyball')">Volleyball</button>
+                    <button class="direction-button" onclick="fetchNews('Basketball')">Basketball</button>
+                    <button class="direction-button " onclick="fetchNews('Formula1')">Formula 1</button>
+                    <button class="direction-button" onclick="fetchNews('Tennis')">Tennis</button>
+                    <button class="direction-button" onclick="fetchNews('Athletics')">Athletics</button>
+                </div>
+
+                <div class="content Football active" id="Football">
+
+                </div>
+                <template id="card-template">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./cards/card-background.jpg" alt="" class="news-image">
+                        </div>
+                        <div class="card-content">
+
+                            <span id="title">Your Title </span>
+                            <p id="description"></p>
+                        </div>
+                    </div>
+                </template>
+            </div>
+            <page-footer></page-footer>
+        </div>
+    </div>
+
+    <script src="./js/landingpageElements/primarynavbar.js"></script>
+    <script src="./js/landingpageElements/secondarynavbar.js"></script>
+    <script src="./js/landingpageElements/footer.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/news.js"></script>
+</body>
+
+</html>

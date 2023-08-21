@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Fauna+One&family=Roboto+Slab:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fauna+One&family=Mulish:wght@200&family=Roboto+Slab:wght@500&display=swap');
+
+h1{
+  font-size:2.9em;
+    color: var(--text-color);
+    font-family: 'DM Serif Display', serif;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    background-color: #00ABD5;
+  }
+  
+  .page-wrapper {
+    height: 100%;
+    width: 100%;
+    background:
+   linear-gradient(96deg, #10131e 50%, transparent calc(50% + 1px));
+    /* background:linear-gradient(96deg,#10131e 0% 70%,transparent 70% 100%); */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+  }
+  
+  .content-wrapper{
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+  .section1,.section2{
+    position:relative;
+    padding:30px;
+    width: 50%;
+    height: 100%;
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    /* border:2px solid white; */
+  }
+  .section1 h1{
+    color:white;
+    font-size: 4.6em;
+    text-transform:capitalize;
+    letter-spacing: 2px;
+    font-family: 'Roboto Slab', serif;
+    transform: translateY(-30px);
+  }
+  .section1 p{
+    color: white;
+    letter-spacing: 1.5px;
+    font-size: 1.4em;
+    line-height: 30px;
+    font-family: 'Mulish', sans-serif;
+    transform: translateY(-30px);
+  }
+  
+  .background-text{
+    color:white;
+    text-transform:uppercase;
+    opacity:40%;
+    font-size: 7.2em;
+  }
+  
+  .section2::before{
+    content:'ITS YOUR ZONE';
+    opacity:30%;
+    font-weight: 900;
+    font-size: 8.2em;
+    color:#dfdddd;
+    position: absolute;
+  }
+  .section2 img{
+    /* align-self: flex-start; */
+    transform: translateY(-40px);
+    filter: drop-shadow(3px 10px 10px #10131e);
+    height: 600px;
+    z-index:40;
+  }
+  
+  @media (max-width:900px){
+    .wrapper{
+        min-height: 122vh;
+    }
+    .page-wrapper{
+        height: 100vh;
+      background :linear-gradient(155deg, #10131e 50%, transparent calc(50% + 1px));
+    }
+  
+    .content-wrapper{  
+      flex-direction: column-reverse;
+    }
+  
+    .section1,.section2{
+      width: 100%;
+      height:50%;
+      align-items:center;
+      justify-content:center;
+    }
+    .section1 h1{
+      font-size: 3.6em;
+      z-index:10;
+      transform: translateY(0px);
+    }
+    .section1 p{
+      z-index:10;
+      transform: translateY(0px);
+    }
+    .section2::before{
+    content:'ITS YOUR ZONE';
+    opacity:30%;
+    font-weight: 900;
+    font-size: 4.2em;
+    color:#dfdddd;
+    position: absolute;
+      text-align: center;
+  }
+    .section2 img{
+      z-index: 1;
+      position:absolute;
+      /* left:25%;
+      right:25%;
+      top:25%;
+      bottom: 25%; */
+      transform: translateY(25%);
+      /* height:650px; */
+      width: 100%;
+    }
+  }
+
+  
+/* styling news section */
+.section-name{
+    font-size: 2em;
+    color:var(--ternary-color);
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: 40%;
+    margin-left: 40%;
+}
+
+.sports-news {
+    height: 180.8vh;
+    width: 100%;
+    overflow: hidden;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items:flex-start;
+    justify-content: space-evenly;
+}
+
+.live-score {
+    height: 105vh;
+    width: 100%;
+    /* background-color: crimson; */
+    overflow: hidden;
+    text-align: center;
+}
+
+.live-score h1{
+    margin: 30px 0px;
+}
+.popular-leagues {
+    height: 50vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section-content{
+    width: 100%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.league {
+    height: 30vh;
+    width: 12vw;
+
+    background: red;
+    border-radius: 10px;
+}
+
+.trending-matches {
+    height: 40vh;
+    width: 100%;
+
+    background-color: red;
+}
+
+/* animations for timed slider */
+@keyframes fadein{
+    from{
+        transform: translateX(8vh);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout{
+    from{
+        transform: translateX(8vh);
+        opacity: 1;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 0;
+    }
+}

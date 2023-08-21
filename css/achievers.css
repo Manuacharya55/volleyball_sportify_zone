@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fauna+One&family=Roboto+Slab:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fauna+One&family=Mulish:wght@200&family=Roboto+Slab:wght@500&display=swap');
+.teamrecords {
+    /* height: 150vh; */
+    padding: 40px 0px 40px 0px;
+    width: 100%;
+    margin-top: 35px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12vh 2vh;
+}
+
+.card {
+    width: 30vw;
+    height: 37vh;
+    position: relative;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-transform: capitalize;
+
+     /* glassmorphic deisgn */
+    background: var(--component-color);
+    box-shadow: 3px 10px 9px rgba(0,0,0,0.1);
+    border-radius: 10px; 
+}
+
+
+.card img {
+    height: 277px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translatex(-50%);
+    transition: 0.5s;
+}
+
+.card:hover{
+    background: linear-gradient(to bottom right,var(--hover-color),var(--component-color));
+}
+.card:hover img {
+    height: 310px;
+    left: 80%;
+}
+
+.card .recordcontent {
+    line-height: 4vh;
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 10px 10px 10px 20px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.card:hover .recordcontent {
+    left: 0%;
+    opacity: 1;
+    visibility: visible;
+    color: var(--text-color);
+}
+
+.card .recordcontent h2 {
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.5em;
+    line-height: 1em;
+}
+
+.card .recordcontent a {
+    position: relative;
+    display: inline-block;
+    color: var(--text-color);
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color:var(--hover-color);
+    margin-top: 5px;
+    font-family: 'Mulish', sans-serif;
+}
+
+@media (max-width:991px){
+    .teamrecords{
+        padding: 0px 0px 40px 0px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 2vh;
+    }
+    .card{
+        position: relative;
+        width: auto;
+        width: 360px;
+        transition: 0.5s;
+        align-items: flex-start;
+    }
+
+    .card img{
+        height: 100%;
+    }
+    .card:hover{
+        height: 540px;
+    }
+
+    .card:hover img{
+        left: 50%;
+        height: 320px;
+    }
+
+    .card .recordcontent{
+        width: 100%;
+        left: 0;
+        padding: 40px;
+    }
+}
+
+@media (max-width:420px){
+    .teamrecords{
+        padding: 0px 0px 40px 0px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        gap: 2vh;
+    }
+    .card{
+        position: relative;
+        width: auto;
+        width: 310px;
+        transition: 0.5s;
+        align-items: flex-start;
+    }
+    .card .recordcontent{
+        width: 100%;
+        left: 0;
+        padding: 30px;
+    }
+}

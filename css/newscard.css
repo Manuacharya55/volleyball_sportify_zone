@@ -1,0 +1,33 @@
+
+.card {
+    margin-top: 25px;
+    background-color: var(--component-color);
+    padding: 10px 5px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.4);
+    width: 280px;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.5s ease all;
+    text-align: left;
+    pointer-events: none;
+}
+
+.news-image {
+    border-radius: 10px;
+    width: 100%;
+    aspect-ratio: 16/9;
+} 
+
+
+#title {
+    color: var(--text-color);
+    font-size: 1.2em;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+#description{
+    visibility: hidden;
+}

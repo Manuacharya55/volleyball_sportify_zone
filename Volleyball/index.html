@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sportify Zone</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/landing.css">
+  <link rel="stylesheet" href="../css/volleyball.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../css/slider.css">
+  <link rel="stylesheet" href="../css/playersonfocus.css">
+
+  <style>
+    .secondary-navbar-holder {
+      background-color: transparent;
+      z-index: 1;
+      position: relative;
+    }
+  </style>
+</head>
+
+<body id="top-navigation">
+  <a href="#top-navigation" class="moveup"><i class="fa-solid fa-arrow-turn-up"></i></a>
+  <div class="main-container">
+
+    <!-- primary navbar -->
+    <primary-navbar></primary-navbar>
+
+    <div class="content-holder">
+      <div class="wrapper">
+        <div class="page-wrapper">
+          <secondary-navbar></secondary-navbar>
+          <div class="content-wrapper">
+            <div class="section1">
+              <h1>prime volleyball League</h1>
+              <p>Asli Volleyball</p>
+              <h1 class="demo"></h1>
+            </div>
+            <div class="section2">
+              <img src="../images/volleyball.png">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- contents -->
+      <div class="recent-matches-holder">
+        <h1 style="text-align: center;">Recent Matches</h1>
+
+
+        <div class="swiper recent-matches-swiper">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide recent-match-card">
+              <div class="match-details">
+                <span>Final</span>
+                <span>05 Mar 2023</span>
+              </div>
+              <div class="match-result">
+
+                <img src="https://www.primevolleyballleague.com/static-assets/images/team/72.png?v=1.15" alt=""
+                  class="logo">
+
+                <span class="sets">2:3</span>
+
+                <img src="https://www.primevolleyballleague.com/static-assets/images/team/69.png?v=1.15" alt=""
+                  class="logo">
+
+              </div>
+              <div class="match-statement">
+
+                <span class="result">Ahmedabad Defenders beat Bengaluru Torpedoes 3 - 2</span>
+
+              </div>
+            </div>
+
+            <!-- slide 2 -->
+            <div class="swiper-slide recent-match-card">
+              <div class="match-details">
+                <span>Semi-Final 2</span>
+                <span>04 Mar 2023</span>
+              </div>
+
+              <div class="match-result">
+                <img src="https://www.primevolleyballleague.com/static-assets/images/team/69.png?v=1.15" alt=""
+                  class="logo">
+
+                <span class="sets">3:1</span>
+
+                <img src="https://www.primevolleyballleague.com/static-assets/images/team/70.png?v=1.15" alt=""
+                  class="logo">
+              </div>
+
+              <div class="match-statement">
+                <span class="result">Ahmedabad Defenders beat Calicut Heroes <br /> 3 - 1</span>
+              </div>
+
+            </div>
+            <div class="swiper-slide recent-match-card">
+              <div class="match-details">
+                <span>Semi-Final 1</span>
+                <span>04 Mar 2023</span>
+              </div>
+
+              <div class="match-result">
+                <img src="https://www.primevolleyballleague.com/static-assets/images/team/71.png?v=1.15" alt=""
+                  class="logo">
+
+                <span class="sets">1:3</span>
+
+                <img src="https://www.primevolleyballleague.com/static-assets/images/team/70.png?v=1.15" alt=""
+                  class="logo">
+              </div>
+
+              <div class="match-statement">
+                <span class="result">Bengaluru Torpedoes beat Kolkata Thunderbolts 3 - 1</span>
+              </div>
+            </div>
+            <div class="swiper-slide recent-match-card">
+              <div class="match-details">
+                <span>Match 28</span>
+                <span>
+                  02 Mar 2023</span>
+              </div>
+
+              <div class="match-result">
+                <img src="https://www.primevolleyballleague.com/static-assets/images/team/71.png?v=1.15" alt=""
+                  class="logo">
+
+                <span class="sets">3:2</span>
+
+                <img src="https://www.primevolleyballleague.com/static-assets/images/team/69.png?v=1.15" alt=""
+                  class="logo">
+              </div>
+
+              <div class="match-statement">
+                <span class="result">Kolkata Thunderbolts beat Ahmedabad Defenders 3 - 2</span>
+              </div>
+            </div>
+            <div class="swiper-slide recent-match-card">
+              <a href="./fixtures.php" style="text-decoration: none; font-size: 1.5em;">see more</a>
+            </div>
+
+          </div>
+          <!-- <div class="swiper-pagination mypaginaion"></div> -->
+        </div>
+      </div>
+
+
+      <div class="parallax-image"></div>
+
+      <div class="player-on-focus">
+        <h1 style="text-align: center;">Image Gallery</h1>
+
+        <div class="container swiper">
+          <div class="slide-container">
+            <div class="card-wrapper swiper-wrapper">
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img
+                    src="https://static.footballcounter.com/wp-content/uploads/2023/03/19145513/ATK-Mohun-Bagan-celebrating-the-victory-ISL-e1679198179181-963x520.jpg"
+                    alt="" />
+                </div>
+
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2022/03/hfc-1-1647842271.jpg"
+                    alt="" />
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img src="https://imgnew.outlookindia.com/public/uploads/articles/2021/2/28/Mumbai-Shield-ISL-7.jpg"
+                    alt="" />
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img src="https://www.mykhel.com/img/2022/03/atk-2019-winners-1647595735.jpg?22062023040951" alt="" />
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img src="https://images.indianexpress.com/2019/03/bengaluru-fc-2.jpg" alt="" />
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img src="https://images.indianexpress.com/2018/03/isl-ens-m.jpg" alt="" />
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img
+                    src="https://images.hindustantimes.com/rf/image_size_960x540/HT/p2/2016/12/19/Pictures/_6e0cb1de-c5d8-11e6-9f83-7f3d2f12db63.jpg"
+                    alt="" />
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img src="https://images.mid-day.com/images/images/2015/dec/21Chennaiyin-FC.jpg" alt="" />
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img
+                    src="https://e0.365dm.com/14/12/768x432/atletico-de-kolkata-indian-super-league-trophy_3243035.jpg?20141220164558"
+                    alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next swiper-navBtn"></div>
+          <div class="swiper-button-prev swiper-navBtn"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+      <!-- footer -->
+      <page-footer></page-footer>
+    </div>
+
+
+  </div>
+
+
+  <script src="../js/volleyballElements/primarynavbar.js"></script>
+  <script src="../js/volleyballElements/secondarynavbar.js"></script>
+  <script src="../js/volleyballElements/footer.js"></script>
+  <script src="../js/navbar.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script src="../js/sliders.js"></script>
+</body>
+
+</html>
