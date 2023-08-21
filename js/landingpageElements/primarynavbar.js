@@ -13,7 +13,7 @@ class PrimaryNavbar extends HTMLElement{
                 <li class="links"><a href="http://localhost/refactoring%20sportifyzone/Football/index.html" class="nav-links"><i class="fa-sharp fa-regular fa-futbol"></i>
                     <span class="tooltiptext">Football</span></a></li>
 
-                <li class="links"><a href="http://localhost/refactoring%20sportifyzone/Football/index.html" class="nav-links"><i class="fa-solid fa-volleyball"></i>
+                <li class="links"><a href="./Volleyball/index.html" class="nav-links"><i class="fa-solid fa-volleyball"></i>
                         <span class="tooltiptext">Volleyball</span></a></a></li>
 
                 <li class="links"><a href="http://localhost/refactoring%20sportifyzone/Football/index.html" class="nav-links"><i class="fa-solid fa-baseball"></i><span
