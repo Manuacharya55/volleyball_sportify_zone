@@ -153,3 +153,18 @@ h1{
         opacity: 0;
     }
 }
+/* responsiveness */
+@media(max-width:900px) {
+
+    .content-holder{
+        width: 100%;
+    }
+    .timed-slider-content,
+    .timed-slider-wrapper {
+        width: 100%;
+        overflow: hidden;
+        background: url('../images/background1.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+}
